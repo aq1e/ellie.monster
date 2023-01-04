@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+pandoc --standalone --embed-resources --template template.html content/index.md -o out/index.html
+pandoc --standalone --embed-resources --template template.html content/about.md -o out/about.html

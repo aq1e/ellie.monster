@@ -1,0 +1,11 @@
+body{
+
+    /* cursor: url(./man-pointing.png) -10 20, auto; */
+}
+html {
+    cursor: url(./images/man-pointing.png) -10 20, auto;
+    font-family: Helvetica, sans-serif;
+    background-color:black;
+    background-image: url(./images/smelly.png);
+    background-repeat: repeat;
+}
