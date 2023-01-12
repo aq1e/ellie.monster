@@ -22,12 +22,10 @@ jobs:
         run: ./build
 
       - name: Publish
-        uses: cloudflare/wrangler-action@2.0.0
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+        uses: Cyb3r-Jak3/wrangler-action
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: 'dist'
-          # accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           # shell: pages publish ./dist 
     
-
-
