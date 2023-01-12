@@ -1,0 +1,30 @@
+name: build and publish on push
+run-name: rebuild and publish after ${{ github.actor }}'s commit'
+on: 
+  push:
+    branches:
+      - 'deploy'
+
+jobs:
+  build-and-deploy:
+    name: build and publish
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+        with: 
+          ref: deploy
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Build
+        run: ./build
+
+      - name: Publish
+        uses: cloudflare/wrangler-actions@2.0.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages publish ./dist
+    
+
+
