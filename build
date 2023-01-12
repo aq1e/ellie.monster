@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+mkdir dist
 pandoc --standalone --embed-resources --template template.html content/index.md -o dist/index.html
