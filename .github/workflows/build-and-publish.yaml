@@ -23,8 +23,9 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountID: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages publish ./dist
+          workingDirectory: 'dist'
+          # accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          # shell: pages publish ./dist 
     
 
 
