@@ -1,4 +1,4 @@
-name: build and publish on push
+name: build and publish on push to deploy branch
 run-name: rebuild and publish after ${{ github.actor }}'s commit'
 on: 
   push:
@@ -23,7 +23,5 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          # workingDirectory: 'dist'
-          # accountID: ${{ secrets.CF_ACCOUNT_ID }}
           command: pages publish ./dist --project-name monster2
     
