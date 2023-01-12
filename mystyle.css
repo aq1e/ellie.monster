@@ -1,6 +1,7 @@
 body{
 
     /* cursor: url(./man-pointing.png) -10 20, auto; */
+    color: azure;
 }
 html {
     cursor: url(./images/man-pointing.png) -10 20, auto;

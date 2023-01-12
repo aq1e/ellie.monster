@@ -2,4 +2,4 @@
 title: juice session
 ---
 
-juice session
+white colored text should show
