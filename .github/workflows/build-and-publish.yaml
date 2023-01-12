@@ -25,5 +25,5 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           # workingDirectory: 'dist'
           # accountID: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages publish ./dist/index.html --project-name monster2
+          command: pages publish ./dist --project-name monster2
     
