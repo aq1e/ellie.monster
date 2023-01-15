@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-rm -r ./dist
+rm -rf ./dist
 mkdir dist
 pandoc --standalone --embed-resources --template template.html content/index.md -o dist/index.html
 pandoc --standalone --embed-resources --template template.html content/haircut-volunteer.md -o dist/haircut-volunteer.html
