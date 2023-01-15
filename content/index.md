@@ -2,4 +2,4 @@
 title: juice session
 ---
 
-white colored text should show
+[Get a haircut for free!](haircut-volunteer.html)
