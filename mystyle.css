@@ -5,6 +5,4 @@ html {
     cursor: url(./images/lucy.png) 20 20, auto;
     font-family: Helvetica, sans-serif;
     background-color:black;
-    background-image: url(./images/smelly.png);
-    background-repeat: repeat;
 }
